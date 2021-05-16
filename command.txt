@@ -1,0 +1,14 @@
+Run with increase verbosity.
+pytest gist/test_gist.py -v
+
+Run with ignore warning
+pytest gist/test_gist.py -v -p no:warnings
+
+Run with specific test function
+pytest gist/test_gist.py -v -p no:warnings -m slow
+
+Run with specific test function
+pytest gist/test_gist.py -v -p no:warnings -m "not slow"
+
+Run with fixture print
+pytest gist/test_gist.py -v -p no:warnings -s
